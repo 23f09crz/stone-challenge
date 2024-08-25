@@ -5,3 +5,4 @@ requests
 flask
 pandas
 pyarrow
+pydub

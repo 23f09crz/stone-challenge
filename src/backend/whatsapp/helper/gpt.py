@@ -83,9 +83,3 @@ def transcript_audio(media_url: str, client) -> dict:
             'transcript': ''
         }
 
-# Exemplo de uso
-if __name__ == "__main__":
-    client = OpenAI(api_key=api_key)
-    question = "Com base nos dados fornecidos, qual parece ser a tendência geral das vendas do cliente?"
-    response = ask_gpt(question, client)
-    print("\nResposta final:", response)

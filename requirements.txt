@@ -3,3 +3,5 @@ openai
 soundfile
 requests
 flask
+pandas
+pyarrow

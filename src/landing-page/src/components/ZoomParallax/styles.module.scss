@@ -49,25 +49,25 @@
             &:nth-of-type(5){
                 .imageContainer{
                     top: 27.5vh;
-                    left: 5vw;
+                    left: 0.5vw;
                     width: 20vw;
                     height: 25vh;
                 }
             }
             &:nth-of-type(6){
                 .imageContainer{
-                    top: 27.5vh;
+                    top: 29.5vh;
                     left: -22.5vw;
-                    width: 30vw;
-                    height: 25vh;
+                    width: 25vw; 
+                    height: 50vh; 
                 }
             }
             &:nth-of-type(7){
                 .imageContainer{
-                    top: 22.5vh;
-                    left: 25vw;
+                    top: 27.5vh;
+                    left: 28vw;
                     width: 15vw;
-                    height: 15vh;
+                    height: 25vh;
                 }
             }
         }

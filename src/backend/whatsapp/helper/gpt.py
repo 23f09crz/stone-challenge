@@ -1,23 +1,21 @@
 import os
 import uuid
 
-import openai
+from openai import OpenAI
 import requests
 import soundfile as sf
 
 from config import config
 
-openai.api_key = config.OPENAI_API_KEY
+api_key = config.OPENAI_API_KEY
 
 chat_log = [
-    {"role": "system", "content": "Você é um assistente financeiro chamado Toni, que reunirá informações sobre pequenos e médios empreendedores e ajudará eles com suas finanças pessoais."},
+    {"role": "system", "content": "Você é um assistente financeiro chamado Toni, feito pela Stone. Em primeiras comunicações é importante você se introduzir, dizendo que é o assistente da stone responsável por facilitar a vida do pequeno empreendedor."}
 ]
 
-
-def ask_gpt(question):
+def ask_gpt(question,client):
     # Add the user's question to the chat log
     chat_log.append({"role": "user", "content": question})
-
     # Create a stream for the response from the assistant
     stream = client.chat.completions.create(
         model="gpt-3.5-turbo",
@@ -40,7 +38,7 @@ def ask_gpt(question):
 
     return assistant_response
     
-def transcript_audio(media_url: str) -> dict:
+def transcript_audio(media_url: str, client) -> dict:
     try:
         ogg_file_path = f'{config.OUTPUT_DIR}/{uuid.uuid1()}.ogg'
         data = requests.get(media_url)
@@ -52,8 +50,9 @@ def transcript_audio(media_url: str) -> dict:
         audio_file = open(mp3_file_path, 'rb')
         os.unlink(ogg_file_path)
         os.unlink(mp3_file_path)
-        transcript = openai.Audio.transcribe(
-            'whisper-1', audio_file, api_key=config.OPENAI_API_KEY)
+        transcript = client.audio.transcriptions.create(
+                        model="whisper-1",
+                        file=audio_file)
         return {
             'status': 1,
             'transcript': transcript['text']

@@ -1,0 +1,25 @@
+@font-face {
+    font-family: 'Title';
+    src: url('../../public/fonts/Roboto-Medium.ttf');
+  }
+  @font-face {
+    font-family: 'Body';
+    src: url('../../public/fonts/OpenSans-Regular.ttf');
+  }
+  
+body{
+    margin: 0px;
+    overflow: hidden; /* Hide scrollbars */
+    cursor: wait;
+}
+
+.body-cards{
+    margin: 0px;
+    font-family: 'Body';
+    margin-bottom: 100vh;
+    margin-top: 100vh;
+}
+
+h2{
+    font-family: 'Title';
+  }

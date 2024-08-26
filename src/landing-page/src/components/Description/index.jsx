@@ -4,7 +4,7 @@ import { useRef } from 'react';
 import { slideUp, opacity } from './animation';
 import Rounded from '../../common/RoundedButton';
 
-export default function index() {
+export default function Index() {
 
     const phrase = "Nosso objetivo é claro: ajudar quem empreende no Brasil. Acreditamos que a tecnologia é a chave para o sucesso de qualquer negócio. Por isso, criamos um assistente no WhatsApp com Inteligência Artificial para microempreendedores. Desenvolvido para Stone, o Toni oferece uma solução digital, humanizada e extremamente intuitiva.";
     const description = useRef(null);

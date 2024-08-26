@@ -13,6 +13,10 @@ body{
     cursor: wait;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .body-cards{
     margin: 0px;
     font-family: 'Body';
@@ -23,3 +27,8 @@ body{
 h2{
     font-family: 'Title';
   }
+
+  a {
+    color: #ffffff; /* Change this to your desired color (e.g., Tomato) */
+    text-decoration: none; /* Optional: Remove underline from links */
+}

@@ -46,19 +46,19 @@ export default function index() {
             <div className={styles.nav}>
                 <Magnetic>
                     <div className={styles.el}>
-                        <a>Sobre</a>
+                        <a href="/">Home</a>
                         <div className={styles.indicator}></div>
                     </div>
                 </Magnetic>
                 <Magnetic>
                     <div className={styles.el}>
-                        <a>Funções</a>
+                        <a href="#sobre">Sobre</a>
                         <div className={styles.indicator}></div>
                     </div>
                 </Magnetic>
                 <Magnetic>
                     <div className={styles.el}>
-                        <a>Contatos</a>
+                        <a href="#contatos">Contatos</a>
                         <div className={styles.indicator}></div>
                     </div>
                 </Magnetic>

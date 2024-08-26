@@ -19,30 +19,7 @@ export default function Index() {
         <motion.div style={{y}} ref={container} className={styles.contact}>
             <div className={styles.body}>
                 <div className={styles.title}>
-                    {/* <span> */}
-                        {/* <div className={styles.imageContainer}>
-                            <Image 
-                            fill={true}
-                            alt={"image"}
-                            src={`/images/background.jpg`}
-                            />
-                        </div>
-                        <div className={styles.imageContainer}>
-                            <Image 
-                            fill={true}
-                            alt={"image"}
-                            src={`/images/background.jpg`}
-                            />
-                        </div>
-                        <div className={styles.imageContainer}>
-                            <Image 
-                            fill={true}
-                            alt={"image"}
-                            src={`/images/background.jpg`}
-                            />
-                        </div> */}
-                        <h2>Toni by Aurum and Stone. Let's work</h2>
-                    {/* </span> */}
+                    <h2>Toni by Aurum and Stone. Let&apos;s work</h2> {/* Escape the apostrophe */}
                     <h2>together</h2>
                     <motion.div style={{x}} className={styles.buttonContainer}>
                         <Rounded  backgroundColor={"#2ECC71"} className={styles.button}>
@@ -69,9 +46,6 @@ export default function Index() {
                         <Rounded>
                             <p>yagotorelly51@gmail.com</p>
                         </Rounded>
-                        {/* <Rounded>
-                            <p>+31 6 27 84 74 30</p>
-                        </Rounded> */}
                 </div>
                 <div className={styles.info}>
                     <div>
@@ -85,36 +59,35 @@ export default function Index() {
                         </span>
                     </div>
                     <div>
-    <span>
-        <h3>LinkedIn</h3>
-        <Magnetic>
-            <p>
-                <a href="https://www.linkedin.com/in/josevalencar" target="_blank" rel="noopener noreferrer">José</a>
-            </p>
-        </Magnetic>
-    </span>
-    <Magnetic>
-        <p>
-            <a href="https://www.linkedin.com/in/luiz-profile" target="_blank" rel="noopener noreferrer">Luiz</a>
-        </p>
-    </Magnetic>
-    <Magnetic>
-        <p>
-            <a href="https://www.linkedin.com/in/rhyan-lemos-silveira/" target="_blank" rel="noopener noreferrer">Rhyan</a>
-        </p>
-    </Magnetic>
-    <Magnetic>
-        <p>
-            <a href="https://www.linkedin.com/in/pedro-henrique-coutinho-cruz/" target="_blank" rel="noopener noreferrer">Pedro</a>
-        </p>
-    </Magnetic>
-    <Magnetic>
-        <p>
-            <a href="https://www.linkedin.com/in/yago-torelly-de-araujo-02a22a265?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" rel="noopener noreferrer">Yago</a>
-        </p>
-    </Magnetic>
-</div>
-
+                        <span>
+                            <h3>LinkedIn</h3>
+                            <Magnetic>
+                                <p>
+                                    <a href="https://www.linkedin.com/in/josevalencar" target="_blank" rel="noopener noreferrer">José</a>
+                                </p>
+                            </Magnetic>
+                        </span>
+                        <Magnetic>
+                            <p>
+                                <a href="https://www.linkedin.com/in/luiz-profile" target="_blank" rel="noopener noreferrer">Luiz</a>
+                            </p>
+                        </Magnetic>
+                        <Magnetic>
+                            <p>
+                                <a href="https://www.linkedin.com/in/rhyan-lemos-silveira/" target="_blank" rel="noopener noreferrer">Rhyan</a>
+                            </p>
+                        </Magnetic>
+                        <Magnetic>
+                            <p>
+                                <a href="https://www.linkedin.com/in/pedro-henrique-coutinho-cruz/" target="_blank" rel="noopener noreferrer">Pedro</a>
+                            </p>
+                        </Magnetic>
+                        <Magnetic>
+                            <p>
+                                <a href="https://www.linkedin.com/in/yago-torelly-de-araujo-02a22a265?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" rel="noopener noreferrer">Yago</a>
+                            </p>
+                        </Magnetic>
+                    </div>
                 </div>
             </div>
         </motion.div>

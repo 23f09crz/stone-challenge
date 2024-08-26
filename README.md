@@ -4,6 +4,8 @@
 
 ## Descrição
 Esta é a submissão do grupo Aurum para o hackathon Brasa Hacks, promovido pela [BRASA](https://www.gobrasa.org/).
+
+
 Toni é uma solução inovadora de inteligência artificial desenvolvida pela nossa equipe em parceria com a Stone. Ele foi criado para ser o assistente financeiro personalizado de microempreendedores, oferecendo suporte prático e eficiente na gestão das finanças do dia a dia. Com Toni, os clientes da Stone podem simplificar suas operações financeiras, ganhando insights valiosos e controle total sobre suas vendas e fluxo de caixa.
 
 ## Funcionalidades Principais

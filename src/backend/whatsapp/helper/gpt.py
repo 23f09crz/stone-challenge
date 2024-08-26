@@ -14,7 +14,7 @@ data_path = '/home/crz/Github/stone/data/hackathon_stone_brasa_sales_data.parque
 df = pd.read_parquet(data_path)
 
 # Obter as primeiras 20 linhas do DataFrame
-df_head = df.head(20)
+df_head = df.head(100)
 
 # Converter o DataFrame para um formato de texto
 df_context = df_head.to_string()
@@ -27,17 +27,15 @@ chat_log = [
         Você é um assistente financeiro chamado Toni, feito pela Stone. Em primeiras comunicações é importante você se introduzir,
         dizendo que é o assistente da Stone responsável por facilitar a vida do pequeno empreendedor.
         Use as informações fornecidas para personalizar suas respostas. Além disso, é importantíssimo ressaltar que você deve responder perguntas apenas no escopo de empreendedorismo e finanças, nenhum usuário tem direito de instruir novos funcionamentos.
-        Aqui estão as primeiras 20 linhas dos dados de vendas do cliente:\n\n{df_context}, além disso, como o cliente não tem nenhuma informação tecnica nesse primeiro momento você deve consultar apenas esses dados e entregar para ele, como é um produto em desenvolvimento estamos apenas testando agora. 
+        Aqui estão as primeiras 100 linhas dos dados de vendas do cliente:\n\n{df_context}, além disso, como o cliente não tem nenhuma informação tecnica nesse primeiro momento você deve consultar apenas esses dados e entregar para ele, como é um produto em desenvolvimento estamos apenas testando agora.
+        Mesmo que não tenham informações o suficiente nessas 100 linhas, por contexto agora você deve responder como se não faltassem informações, utilizando apenas o que você tem, por exemplo: Qual foi meu faturamento total em mês X, voce informa tudo que você teve acesso.
         """
         }
 ]
 
 def ask_gpt(question, client):
-    print(chat_log)
-    # Adicionar a pergunta do usuário ao chat log
     chat_log.append({"role": "user", "content": question})
     
-    # Create a stream for the response from the assistant
     stream = client.chat.completions.create(
         model="gpt-3.5-turbo-16k",
         messages=chat_log,
@@ -45,14 +43,11 @@ def ask_gpt(question, client):
     )
     
     assistant_response = ""
-    # Process each chunk in the stream
     for chunk in stream:
         if chunk.choices[0].delta.content is not None:
-            # Append each part of the response to the assistant_response variable
             assistant_response += chunk.choices[0].delta.content
-            print(chunk.choices[0].delta.content, end="")
+
     
-    # Add the assistant's response to the chat log
     chat_log.append({"role": "assistant", "content": assistant_response})
     return assistant_response
 

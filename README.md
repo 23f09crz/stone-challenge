@@ -22,6 +22,7 @@ Toni é uma solução inovadora de inteligência artificial desenvolvida pela no
 
 ## Roadmap Futuro
 - **Integração com API Própria da Stone**: Numa implementação futura do Toni, ele pode ser linkado diretamente com a API da Stone, tendo sempre acesso aos novos dados do empreendedor.
+- **Aumento da Escalabilidade**: Conforme o uso do Toni aumentar, será necessário ter um servidor dedicado para lidar com as 
 
 ## Equipe
 - **José**: Business, Editor
@@ -62,6 +63,8 @@ Além disso, caso queira rodar a landing page localmente é possível fazê-lo r
 - ```npm i```
 - ```npm run dev```
 
+
+Para mais informações, a documentação oficial pode ser acessada [Neste Link](https://docs.google.com/document/d/1m8SNWrLXF-v2AqN_ZCpz7OAvnOQiiQ7nLFXgE2IL560/edit)
 
 
 

@@ -17,7 +17,7 @@ Toni é uma solução inovadora de inteligência artificial desenvolvida pela no
 - **Dados da Stone**: Por utilizar os proprios dados da Stone, o Toni conhece e consegue atender cada negócio de forma personalizada e pessoal.
 - **Inteligência Artificial**: O Toni é alimentado pelos mais capazes modelos de IA, utilizando o melhor da tecnologia para melhorar a experiência do cliente Stone.
 - **Whatsapp**: A interação com o Toni acontece 100% via Whatsapp, tendo uma curva de aprendizado nula, focada completamente no empreendedor.
-- **Desenvolvimento Backend**: Pythom, Flask, Twilio, OpenAI API
+- **Desenvolvimento Backend**: Python, Flask, Twilio, OpenAI API
 - **Desenvolvimento Frontend (Landing Page)**: Javascript, NextJS
 
 ## Roadmap Futuro

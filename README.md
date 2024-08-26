@@ -1,7 +1,10 @@
-# Toni - Assistente de Gestão Financeira para Microempreendedores
+
+
+![Logo do Projeto](./img/capa_1_toni.jpg)
 
 ## Descrição
-Toni é uma solução inovadora de inteligência artificial desenvolvida pelo grupo Aurum em parceria com a Stone. Ele foi criado para ser o assistente financeiro personalizado de microempreendedores, oferecendo suporte prático e eficiente na gestão das finanças do dia a dia. Com Toni, os clientes da Stone podem simplificar suas operações financeiras, ganhando insights valiosos e controle total sobre suas vendas e fluxo de caixa.
+Esta é a submissão do grupo Aurum para o hackathon Brasa Hacks, promovido pela [BRASA](https://www.gobrasa.org/).
+Toni é uma solução inovadora de inteligência artificial desenvolvida pela nossa equipe em parceria com a Stone. Ele foi criado para ser o assistente financeiro personalizado de microempreendedores, oferecendo suporte prático e eficiente na gestão das finanças do dia a dia. Com Toni, os clientes da Stone podem simplificar suas operações financeiras, ganhando insights valiosos e controle total sobre suas vendas e fluxo de caixa.
 
 ## Funcionalidades Principais
 - **Gestão Financeira**: Geração de relatórios detalhados de vendas e monitoramento de fluxo de caixa para uma visão clara e organizada das finanças.
@@ -12,13 +15,14 @@ Toni é uma solução inovadora de inteligência artificial desenvolvida pelo gr
 - **Dados da Stone**: Por utilizar os proprios dados da Stone, o Toni conhece e consegue atender cada negócio de forma personalizada e pessoal.
 - **Inteligência Artificial**: O Toni é alimentado pelos mais capazes modelos de IA, utilizando o melhor da tecnologia para melhorar a experiência do cliente Stone.
 - **Whatsapp**: A interação com o Toni acontece 100% via Whatsapp, tendo uma curva de aprendizado nula, focada completamente no empreendedor.
+- **Desenvolvimento Backend**: Pythom, Flask, Twilio, OpenAI API
+- **Desenvolvimento Frontend (Landing Page)**: Javascript, NextJS
 
 ## Roadmap Futuro
 - **Integração com API Própria da Stone**: Numa implementação futura do Toni, ele pode ser linkado diretamente com a API da Stone, tendo sempre acesso aos novos dados do empreendedor.
-- **Fine Tuning**: 
 
 ## Equipe
-- **José**: Business
+- **José**: Business, Editor
 - **Luiz**: Business
 - **Yago**: Design
 - **Rhyan**: Programação

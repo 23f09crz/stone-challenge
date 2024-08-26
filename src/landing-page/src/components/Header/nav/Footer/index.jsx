@@ -3,10 +3,11 @@ import styles from './style.module.scss';
 export default function index() {
   return (
     <div className={styles.footer}>
-        <a>Awwwards</a>
-        <a>Instagram</a>
-        <a>Dribble</a>
-        <a>LinkedIn</a>
+        <a>José</a>
+        <a>Luiz</a>
+        <a>Rhyan</a>
+        <a>Pedro</a>
+        <a>Yago</a>
     </div>
   )
 }

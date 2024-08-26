@@ -15,11 +15,12 @@ export default function index() {
     const y = useTransform(scrollYProgress, [0, 1], [-500, 0])
     const rotate = useTransform(scrollYProgress, [0, 1], [120, 90])
     return (
+        <section id="contatos">
         <motion.div style={{y}} ref={container} className={styles.contact}>
             <div className={styles.body}>
                 <div className={styles.title}>
-                    <span>
-                        <div className={styles.imageContainer}>
+                    {/* <span> */}
+                        {/* <div className={styles.imageContainer}>
                             <Image 
                             fill={true}
                             alt={"image"}
@@ -39,13 +40,13 @@ export default function index() {
                             alt={"image"}
                             src={`/images/background.jpg`}
                             />
-                        </div>
-                        <h2>Let's work</h2>
-                    </span>
+                        </div> */}
+                        <h2>Toni by Aurum and Stone. Let's work</h2>
+                    {/* </span> */}
                     <h2>together</h2>
                     <motion.div style={{x}} className={styles.buttonContainer}>
                         <Rounded  backgroundColor={"#2ECC71"} className={styles.button}>
-                            <p>Get in touch</p>
+                            <p>Entre em contato</p>
                         </Rounded>
                     </motion.div>
                     <motion.svg style={{rotate, scale: 2}} width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -54,42 +55,69 @@ export default function index() {
                 </div>
                 <div className={styles.nav}>
                         <Rounded>
-                            <p>info@dennissnellenberg.com</p>
+                            <p>jose.silva@sou.inteli.edu.br</p>
                         </Rounded>
                         <Rounded>
-                            <p>+31 6 27 84 74 30</p>
+                            <p>lggmarques28@gmail.com</p>
                         </Rounded>
+                        <Rounded>
+                            <p>rhyanlemos05@gmail.com</p>
+                        </Rounded>
+                        <Rounded>
+                            <p>pedrocruzbusiness@gmail.com</p>
+                        </Rounded>
+                        <Rounded>
+                            <p>yagotorelly51@gmail.com</p>
+                        </Rounded>
+                        {/* <Rounded>
+                            <p>+31 6 27 84 74 30</p>
+                        </Rounded> */}
                 </div>
                 <div className={styles.info}>
                     <div>
                         <span>
                             <h3>Version</h3>
-                            <p>2022 © Edition</p>
+                            <p>2024 © Edition</p>
                         </span>
                         <span>
-                            <h3>Version</h3>
-                            <p>11:49 PM GMT+2</p>
+                            <h3>Aurum</h3>
+                            <p>17:22 PM GMT+3</p>
                         </span>
                     </div>
                     <div>
-                        <span>
-                            <h3>socials</h3>
-                            <Magnetic>
-                                <p>Awwwards</p>
-                            </Magnetic>
-                        </span>
-                        <Magnetic>
-                            <p>Instagram</p>
-                        </Magnetic>
-                        <Magnetic>
-                            <p>Dribbble</p>
-                        </Magnetic>
-                        <Magnetic>
-                            <p>Linkedin</p>
-                        </Magnetic>
-                    </div>
+    <span>
+        <h3>LinkedIn</h3>
+        <Magnetic>
+            <p>
+                <a href="https://www.linkedin.com/in/josevalencar" target="_blank" rel="noopener noreferrer">José</a>
+            </p>
+        </Magnetic>
+    </span>
+    <Magnetic>
+        <p>
+            <a href="https://www.linkedin.com/in/luiz-profile" target="_blank" rel="noopener noreferrer">Luiz</a>
+        </p>
+    </Magnetic>
+    <Magnetic>
+        <p>
+            <a href="https://www.linkedin.com/in/rhyan-lemos-silveira/" target="_blank" rel="noopener noreferrer">Rhyan</a>
+        </p>
+    </Magnetic>
+    <Magnetic>
+        <p>
+            <a href="https://www.linkedin.com/in/pedro-henrique-coutinho-cruz/" target="_blank" rel="noopener noreferrer">Pedro</a>
+        </p>
+    </Magnetic>
+    <Magnetic>
+        <p>
+            <a href="https://www.linkedin.com/in/yago-torelly-de-araujo-02a22a265?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" rel="noopener noreferrer">Yago</a>
+        </p>
+    </Magnetic>
+</div>
+
                 </div>
             </div>
         </motion.div>
+        </section>
     )
 }
